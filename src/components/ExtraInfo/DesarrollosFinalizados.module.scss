@@ -1,0 +1,130 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    position: absolute;
+
+    z-index: 9999;
+
+    height: 100vh;
+    width: calc(100%);
+    top: 200%;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 0px 10px;
+
+    .container {
+        border-radius: 20px;
+        background-color: $azul-marino;
+
+        width: calc(100% - 50px);
+        padding: 50px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__header {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            &__btn_close {
+                cursor: pointer;
+
+                svg {
+                    height: 40px;
+                }
+            }
+        }
+
+        &__content {
+            position: relative;
+            top: 20%;
+
+            width: 100%;
+            overflow: hidden;
+
+            text-align: center;
+        }
+    }
+}
+
+.item_slider {
+    svg {
+        height: 350px;
+        width: 350px;
+    }
+    // svg {
+    //     height: 65%;
+    //     width: auto;
+    // }
+}
+
+@media (max-width: $lg) {
+    .wrapper {
+        .container {
+            gap: 0px;
+
+            &__content {
+                top: 10%;
+            }
+        }
+    }
+
+    .item_slider {
+        svg {
+            height: 250px;
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    .wrapper {
+        .container {
+            gap: 0px;
+
+            &__content {
+                top: 20%;
+            }
+        }
+    }
+
+    .item_slider {
+        svg {
+            height: 250px;
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        padding: 0px 0px;
+
+        .container {
+            border-radius: 20px;
+
+            width: calc(100% - 30px);
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+
+            &__content {
+                position: relative;
+                top: 5%;
+            }
+        }
+    }
+
+    .item_slider {
+        svg {
+            height: auto;
+            width: 60%;
+        }
+    }
+}

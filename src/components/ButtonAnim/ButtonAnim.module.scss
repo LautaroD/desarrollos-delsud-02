@@ -1,0 +1,108 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    .container_btn {
+        font-family: $addigton;
+        font-size: 40px;
+
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+
+        user-select: none;
+
+        svg {
+            position: absolute;
+
+            transform: translate(-140px, -43px) !important;
+            width: 270px !important;
+            height: 180px !important;
+        }
+    }
+    .container_btn_v2 {
+        font-family: $addigton;
+        font-size: 30px;
+
+        cursor: pointer;
+        color: $beige;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+
+        user-select: none;
+
+        svg {
+            position: absolute;
+
+            transform: translate(-105px, 0px) !important;
+            width: 210px !important;
+            height: 80px !important;
+        }
+    }
+}
+@media (max-width: $lg) {
+    .wrapper {
+        .container_btn {
+            font-size: 30px;
+
+            gap: 10px;
+
+            svg {
+                position: absolute;
+
+                transform: translate(-100px, -20px) !important;
+                width: 205px !important;
+                height: 105px !important;
+            }
+        }
+
+        .container_btn_v2 {
+            font-size: 30px;
+
+            gap: 10px;
+
+            svg {
+                position: absolute;
+
+                transform: translate(-100px, -20px) !important;
+                width: 205px !important;
+                height: 105px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        .container_btn {
+            font-size: 17px;
+
+            position: relative;
+
+            svg {
+                position: absolute;
+
+                transform: translate(-50px, -30px) !important;
+                width: 100px !important;
+            }
+        }
+
+        .container_btn_v2 {
+            font-size: 17px;
+
+            svg {
+                position: absolute;
+
+                transform: translate(-73px, -30px) !important;
+                width: 150px !important;
+            }
+        }
+    }
+}

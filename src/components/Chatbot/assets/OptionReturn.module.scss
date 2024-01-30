@@ -1,0 +1,49 @@
+.container {
+    &__extraOptions {
+        margin-top: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+
+        p {
+            margin: 0px;
+            font-size: 10px;
+        }
+
+        &__returnBtn {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 8px 17px 8px 10px;
+            border: none;
+            width: 70%;
+
+            background-color: transparent;
+            border-radius: 5px;
+            border: 1px solid #003a70;
+            color: #003a70;
+
+            cursor: pointer;
+        }
+
+        &__returnBtn:hover {
+            background-color: #003a70;
+            color: #e8e9ed !important;
+
+            svg {
+                path {
+                    stroke: #e8e9ed;
+                }
+            }
+
+            .svg_headset {
+                path {
+                    stroke: inherit !important;
+                    fill: #e8e9ed;
+                }
+            }
+        }
+    }
+}

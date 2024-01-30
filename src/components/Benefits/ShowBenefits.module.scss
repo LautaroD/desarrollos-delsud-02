@@ -1,0 +1,301 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    // z-index: 9999;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 250px;
+
+    top: -100px;
+
+    // height: 100%;
+    // width: 60%;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+
+        opacity: 0;
+    }
+
+    .card {
+        padding: 10px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        svg {
+            height: 150px;
+        }
+
+        button {
+            cursor: pointer;
+
+            border: none;
+            border-radius: 50px;
+
+            width: 166px;
+            height: 30px;
+
+            font-family: $neue;
+            color: $azul-marino;
+
+            &:hover {
+                background-color: $naranja;
+                color: $beige;
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .wrapper {
+        top: -100px;
+
+        .card {
+            padding: 10px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            svg {
+                height: 50px;
+            }
+
+            button {
+                cursor: pointer;
+
+                border: none;
+                border-radius: 50px;
+
+                width: 166px;
+                height: 30px;
+
+                font-family: $neue;
+                color: $azul-marino;
+
+                &:hover {
+                    background-color: $naranja;
+                    color: $beige;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        position: relative;
+
+        .container {
+            position: absolute;
+
+            top: -110px;
+            height: 100vh;
+
+            z-index: 8;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            opacity: 0;
+        }
+
+        .card {
+            padding: 10px;
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            svg {
+                // height: 50px;
+                height: 10vw;
+            }
+
+            button {
+                cursor: pointer;
+
+                border: none;
+                border-radius: 50px;
+
+                width: 166px;
+                height: 25px;
+
+                font-family: $neue;
+                color: $azul-marino;
+
+                &:hover {
+                    background-color: $naranja;
+                    color: $beige;
+                }
+            }
+        }
+    }
+}
+
+// @media (max-width: $sm) {
+//     .wrapper {
+//         display: inherit;
+//         justify-content: inherit;
+//         align-items: inherit;
+
+//         height: 100vh;
+//         width: 100vw;
+
+//         top: 0 !important;
+//         overflow: hidden;
+
+//         .container {
+//             display: flex;
+//             flex-direction: column;
+//             gap: 20px;
+
+//             opacity: 0;
+//         }
+
+//         .card {
+//             padding: 10px;
+//             text-align: center;
+
+//             display: flex;
+//             align-items: center;
+//             flex-direction: column;
+//             justify-content: center;
+//             gap: 10px;
+
+//             svg {
+//                 height: 50px;
+//             }
+
+//             button {
+//                 cursor: pointer;
+
+//                 border: none;
+//                 border-radius: 50px;
+
+//                 width: 166px;
+//                 height: 30px;
+
+//                 font-family: $neue;
+//                 color: $azul-marino;
+
+//                 &:hover {
+//                     background-color: $naranja;
+//                     color: $beige;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @import "../../styles/variables.scss";
+
+// .wrapper {
+//     position: absolute;
+//     z-index: 9999;
+
+//     top: -550px;
+
+//     height: 100%;
+//     width: 60%;
+
+//     .container {
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-template-rows: repeat(2, 1fr);
+//         gap: 20px;
+
+//         opacity: 0;
+//     }
+
+//     .card {
+//         padding: 10px;
+//         text-align: center;
+
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 10px;
+
+//         svg {
+//             height: 150px;
+//         }
+
+//         button {
+//             cursor: pointer;
+
+//             border: none;
+//             border-radius: 50px;
+
+//             width: 166px;
+//             height: 30px;
+
+//             font-family: $neue;
+//             color: $azul-marino;
+
+//             &:hover {
+//                 background-color: $naranja;
+//                 color: $beige;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: $lg) {
+//     .wrapper {
+//         top: -270px;
+
+//         .card {
+//             padding: 10px;
+//             text-align: center;
+
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             gap: 10px;
+
+//             svg {
+//                 height: 50px;
+//             }
+
+//             button {
+//                 cursor: pointer;
+
+//                 border: none;
+//                 border-radius: 50px;
+
+//                 width: 166px;
+//                 height: 30px;
+
+//                 font-family: $neue;
+//                 color: $azul-marino;
+
+//                 &:hover {
+//                     background-color: $naranja;
+//                     color: $beige;
+//                 }
+//             }
+//         }
+//     }
+// }

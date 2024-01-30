@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.button_open_chat {
+    background-color: $azul-marino;
+    border-radius: 7px;
+    padding: 10px;
+
+    img {
+        height: 45px;
+        width: 45px;
+    }
+}

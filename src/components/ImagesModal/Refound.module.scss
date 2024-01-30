@@ -1,0 +1,53 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    position: absolute;
+    opacity: 0;
+
+    // left: 48%;
+    // top: 10vh;
+    overflow: hidden;
+    border-radius: 140px;
+
+    top: 45%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+    height: 700px;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    height: 700px;
+
+    &__container_img {
+        video {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .wrapper {
+        overflow: hidden;
+        border-radius: 140px;
+
+        height: 700px;
+        z-index: 3;
+
+        width: 330px;
+        height: 550px;
+
+        top: 50%;
+        left: 60%;
+
+        &__container_img {
+            video {
+                width: 100%;
+            }
+        }
+    }
+}

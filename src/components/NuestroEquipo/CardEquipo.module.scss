@@ -1,0 +1,152 @@
+@import "../../styles/variables.scss";
+
+.image_container {
+    position: relative;
+
+    z-index: 9999;
+
+    background-color: $azul-grisaceo;
+
+    overflow: hidden;
+
+    border-radius: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    // height: 230px;
+    flex-shrink: 0;
+
+    img {
+        position: relative;
+        top: 5%;
+
+        // width: 165px;
+        width: auto;
+        height: 27vh;
+    }
+}
+
+.description {
+    opacity: 0;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 9;
+
+    width: 250px;
+
+    transform: translate(0px, -150px);
+
+    font-family: $neue;
+    gap: 5px;
+    color: $azul-francia;
+    font-weight: 500;
+    font-size: 18px;
+
+    &__name {
+        font-size: 22px;
+        color: $azul-marino;
+    }
+}
+
+.description_v2 {
+    opacity: 0;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 9;
+
+    width: 250px;
+
+    transform: translate(0px, -150px);
+
+    font-family: $neue;
+    gap: 5px;
+    color: $azul-francia;
+    font-weight: 500;
+    font-size: 18px;
+
+    &__name {
+        font-size: 22px;
+        color: $azul-marino;
+    }
+}
+
+@media (max-width: $lg) {
+    .image_container {
+        display: flex;
+        align-items: baseline;
+
+        width: 140px;
+        // height: 185px;
+    }
+
+    .description {
+        width: 250px;
+
+        transform: translate(0px, -110px);
+
+        font-family: $neue;
+        gap: 5px;
+        color: $azul-francia;
+        font-weight: 500;
+        font-size: 15px;
+
+        &__name {
+            font-size: 17px;
+            color: $azul-marino;
+        }
+    }
+
+    .description_v2 {
+        width: 250px;
+
+        transform: translate(0px, -110px);
+
+        font-family: $neue;
+        gap: 5px;
+        color: $azul-francia;
+        font-weight: 500;
+        font-size: 15px;
+
+        &__name {
+            font-size: 17px;
+            color: $azul-marino;
+        }
+    }
+}
+
+@media (max-width: 1041px) {
+    .description {
+        font-size: 14px;
+
+        &__name {
+            font-size: 15px;
+            color: $azul-marino;
+        }
+    }
+    .description_v2 {
+        font-size: 14px;
+
+        &__name {
+            font-size: 15px;
+            color: $azul-marino;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .image_container {
+        display: flex;
+        align-items: baseline;
+
+        width: 100px;
+        height: 155px;
+    }
+}

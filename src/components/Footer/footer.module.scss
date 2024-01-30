@@ -1,0 +1,136 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    padding: 20px 0px;
+
+    width: 100vw;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-color: $azul-marino;
+
+    .container {
+        height: 100%;
+        width: 90vw;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            span {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: $beige;
+                font-family: $neue;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+
+        &__redes {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    .footer {
+        // position: absolute;
+
+        height: 100px;
+        width: 100vw;
+
+        background-color: $beige;
+
+        color: $azul-marino;
+        font-family: $neue;
+        font-weight: 300;
+        font-size: 14px;
+
+        display: flex;
+        justify-content: center;
+
+        span {
+            height: 100%;
+            width: 90vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        padding: 10px 0px;
+
+        width: 100vw;
+
+        .container {
+            &__redes {
+                display: flex;
+            }
+
+            &__info {
+                flex-direction: column;
+                display: flex;
+                gap: 10px;
+
+                a {
+                    align-items: center;
+                    display: flex;
+                    gap: 10px;
+                }
+                span {
+                    gap: 10px;
+                    color: $beige;
+                    font-size: 12px;
+                    display: flex;
+                    font-weight: 500;
+                    font-family: $neue;
+                    align-items: center;
+                }
+            }
+        }
+
+        .footer {
+            // position: absolute;
+
+            display: flex;
+            justify-content: center;
+
+            span {
+                height: 100%;
+                width: 90vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+            }
+
+            a {
+                img {
+                    width: 150px;
+                }
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}

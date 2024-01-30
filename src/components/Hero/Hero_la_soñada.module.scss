@@ -1,0 +1,91 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    overflow: hidden;
+
+    height: 1000px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        &__image_01 {
+            transform: translateX(-200%) rotate(-7deg);
+        }
+
+        &__image_02 {
+            transform: translateX(200%) rotate(15deg);
+        }
+
+        span {
+            button {
+                img {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .wrapper {
+        .container {
+            &__image_01 {
+                transform: translateX(-200%) rotate(-7deg);
+
+                height: 350px;
+                width: auto;
+            }
+            &__image_02 {
+                transform: translateX(200%) rotate(15deg);
+                height: 300px;
+                width: auto;
+            }
+
+            span {
+                button {
+                    img {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        height: 350px;
+        overflow: hidden;
+
+        .container {
+            overflow: hidden;
+
+            &__image_01 {
+                transform: translateX(-200%) rotate(-7deg);
+                height: 130px;
+                width: auto;
+            }
+
+            &__image_02 {
+                transform: translateX(200%) rotate(15deg);
+                height: 120px;
+                width: auto;
+            }
+
+            span {
+                button {
+                    img {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+}

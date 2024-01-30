@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        font-size: 38px;
+        font-family: $neue;
+
+        .text {
+            font-family: $neue;
+            color: $azul-francia;
+
+            span {
+                font-family: $addigton;
+                color: $naranja;
+                font-weight: 600;
+            }
+        }
+
+        .text_v2 {
+            font-family: $addigton;
+            color: $naranja;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 1190px) {
+    .container {
+        &__content {
+            width: 80%;
+            margin: auto;
+
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        &__content {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

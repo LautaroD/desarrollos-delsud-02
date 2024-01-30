@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    .container {
+        opacity: 0;
+        scale: 0.5;
+
+        position: absolute;
+        z-index: 91;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-color: $azul-grisaceo;
+        border-radius: 150px;
+        padding: 25px 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+
+        &__title {
+            font-family: $addigton;
+            font-size: 60px;
+            color: $azul-marino;
+            font-weight: 600;
+        }
+    }
+}

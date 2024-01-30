@@ -1,0 +1,304 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    position: fixed;
+    left: -100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 999;
+
+    height: 860px;
+    width: 830px;
+
+    background-color: $azul-marino;
+
+    border-radius: 10px;
+
+    input:focus {
+        outline: 0px;
+    }
+
+    textarea:focus {
+        outline: 0px;
+    }
+
+    .container {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        color: $beige;
+        font-family: $neue;
+
+        &__header {
+            font-size: 50px;
+        }
+
+        &__description {
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        &__field {
+            margin-top: 20px;
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            span {
+                display: flex;
+                gap: 25px;
+
+                .field {
+                    height: 45px;
+                    border: none;
+                    border-radius: 7px;
+                    padding-left: 15px;
+
+                    width: 100%;
+                    font-family: $neue;
+                    font-weight: 500;
+                    font-size: 17px;
+                }
+
+                .field_area {
+                    width: 100%;
+                    border-radius: 7px;
+                    padding: 15px;
+                    font-family: $neue;
+                    font-weight: 500;
+                    font-size: 17px;
+                }
+            }
+        }
+
+        .error_message {
+            color: red;
+            font-size: 14px;
+            position: absolute;
+            transform: translate(5px, 47px);
+        }
+
+        &__field_double {
+            margin-top: 20px;
+            display: flex;
+            gap: 25px;
+
+            span {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                span {
+                    display: flex;
+                    gap: 25px;
+
+                    .field {
+                        height: 45px;
+                        border: none;
+                        border-radius: 7px;
+                        padding-left: 15px;
+
+                        width: 100%;
+                        font-family: $neue;
+                        font-weight: 500;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.button_disabled {
+    margin-top: 20px;
+}
+
+.button_submit {
+    margin-top: 20px;
+    width: 150px;
+
+    border: none;
+    background-color: inherit;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    &__text {
+        border-radius: 14px;
+        width: 100px;
+        height: 38px;
+        background-color: $azul-francia;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: $beige;
+        font-size: 17px;
+        font-weight: 500;
+        font-family: $neue;
+    }
+
+    &__send {
+        svg {
+            height: 38px;
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: $lg) {
+    .wrapper {
+        height: 550px;
+        width: 830px;
+
+        .container {
+            padding: 10px 30px;
+            gap: 0px;
+
+            &__header {
+                font-size: 25px;
+            }
+
+            &__description {
+                font-size: 16px;
+            }
+
+            &__field {
+                margin-top: 10px;
+
+                p {
+                    font-size: 15px;
+                }
+
+                span {
+                    gap: 25px;
+
+                    .field {
+                        height: 35px;
+
+                        font-size: 16px;
+                    }
+
+                    .field_area {
+                        padding: 10px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .error_message {
+                font-size: 12px;
+                transform: translate(230px, -15px);
+            }
+
+            &__field_double {
+                margin-top: 10px;
+                gap: 25px;
+
+                span {
+                    p {
+                        font-size: 15px;
+                    }
+
+                    span {
+                        .field {
+                            height: 35px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .button_disabled {
+        margin-top: 10px;
+    }
+
+    .button_submit {
+        margin-top: 10px;
+
+        &__text {
+            width: 70px;
+            height: 30px;
+
+            font-size: 15px;
+        }
+
+        &__send {
+            svg {
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        height: 90%;
+        width: 100%;
+
+        top: 55%;
+        left: -120%;
+        z-index: 9999;
+
+        user-select: none;
+
+        .container {
+            padding: 10px 20px;
+            gap: 0px;
+
+            &__field {
+                margin-top: 10px;
+
+                p {
+                    font-size: 12px;
+                }
+
+                span {
+                    gap: 15px;
+
+                    .field {
+                        height: 30px;
+
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .error_message {
+                font-size: 11px;
+                transform: translate(40px, 32px);
+            }
+
+            &__field_double {
+                gap: 15px;
+
+                span {
+                    span {
+                        .field {
+                            height: 30px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .comentarios {
+        margin-top: 30px !important;
+    }
+}

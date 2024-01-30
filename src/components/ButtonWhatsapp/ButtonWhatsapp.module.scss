@@ -1,0 +1,31 @@
+.container {
+    position: fixed;
+    bottom: 105px;
+    right: 35px;
+}
+.home {
+    position: fixed;
+    bottom: 105px;
+    right: 40px;
+
+    img {
+        height: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        position: relative;
+        right: 0px;
+        left: 77%;
+        bottom: 30px;
+        transform: translateY(-10%);
+    }
+    .home {
+        position: relative;
+        right: 0px;
+        left: 77%;
+        bottom: 20px;
+        transform: translateY(-10%);
+    }
+}

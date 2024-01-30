@@ -1,0 +1,136 @@
+@import "../../styles/variables.scss";
+
+.v1 {
+    // width: 360px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: inherit;
+    border: none;
+
+    .button {
+        cursor: pointer;
+
+        font-family: $neue;
+        font-size: 18px;
+        font-weight: 500;
+        color: $beige;
+
+        border: 2px solid $beige;
+        border-radius: 140px;
+
+        padding: 15px 30px;
+
+        // transition: 0.5s ease;
+
+        &:hover {
+            background-color: $beige;
+            color: $azul-marino;
+        }
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.v2 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: inherit;
+    border: none;
+
+    .button {
+        cursor: pointer;
+
+        width: 220px;
+
+        display: flex;
+        justify-content: center;
+
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $neue !important;
+        color: $azul-marino !important;
+
+        border: 2px solid $azul-marino !important;
+        border-radius: 140px;
+
+        padding: 15px 30px;
+
+        // transition: 0.5s ease;
+
+        &:hover {
+            background-color: $azul-marino !important;
+            color: $beige !important;
+        }
+    }
+
+    span {
+        display: flex;
+    }
+
+    img {
+        cursor: pointer;
+        transform: rotate(90deg);
+    }
+}
+.v3 {
+    // width: 360px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: inherit;
+    border: none;
+
+    .button {
+        cursor: pointer;
+
+        font-family: $neue;
+        font-size: 18px;
+        font-weight: 500;
+        color: $beige;
+
+        border: 2px solid $beige;
+        border-radius: 140px;
+
+        padding: 15px 30px;
+
+        // transition: 0.5s ease;
+
+        &:hover {
+            background-color: $beige;
+            color: $azul-marino;
+        }
+    }
+
+    span {
+        display: flex;
+    }
+
+    img {
+        cursor: pointer;
+        transform: rotate(270deg);
+    }
+}
+
+@media (max-width: 530px) {
+    .v2 {
+        .button {
+            width: 170px;
+
+            font-size: 16px;
+
+            border-radius: 140px;
+
+            padding: 7px 20px;
+        }
+    }
+}

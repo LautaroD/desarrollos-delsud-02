@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    width: 280px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: $beige;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: $neue;
+
+    p {
+        cursor: pointer;
+
+        &:hover {
+            color: $naranja;
+        }
+    }
+}

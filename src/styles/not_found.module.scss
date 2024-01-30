@@ -1,0 +1,79 @@
+@import "./variables.scss";
+
+.wrapper {
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden !important;
+    overflow-y: hidden;
+
+    &__background {
+        position: absolute;
+        height: 100vh;
+        top: -13%;
+    }
+
+    .cerquito {
+        position: absolute;
+        top: -13%;
+    }
+
+    .texto {
+        position: absolute;
+        top: 50%;
+        left: 65%;
+
+        transform: translate(-50%, -50%);
+
+        &__prim {
+            display: flex;
+            align-items: flex-end;
+
+            :nth-child(1) {
+                font-family: $addigton;
+                font-size: 300px;
+                font-style: italic;
+                font-weight: 700;
+                line-height: normal;
+
+                color: transparent;
+                -webkit-text-stroke: 1px $azul-francia;
+            }
+
+            :nth-child(2) {
+                position: relative;
+
+                font-family: $neue;
+                font-size: 50px;
+                font-weight: 700;
+
+                color: $azul-marino;
+                bottom: 50px;
+            }
+        }
+
+        &__return {
+            color: #425066;
+            font-family: $neue;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+
+            display: flex;
+            gap: 20px;
+
+            button {
+                background-color: inherit;
+                font-family: $neue;
+                padding: 5px;
+                width: 160px;
+                height: 50px;
+                cursor: pointer;
+                border-radius: 120px;
+                border: 1.45px solid $azul-marino;
+            }
+        }
+    }
+}

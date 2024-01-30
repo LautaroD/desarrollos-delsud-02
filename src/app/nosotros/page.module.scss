@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    height: calc(100% - 70px);
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: flex-start;
+        align-items: center;
+
+        height: 100%;
+
+        .slider {
+            padding: 100px;
+
+            height: 100vh;
+            width: 100vw;
+
+            display: flex;
+        }
+
+        .about_us {
+            height: 100vh;
+            width: 100vw;
+        }
+    }
+}
+
+@media (max-width: 833px) {
+    .wrapper {
+        .container {
+            .slider {
+                padding: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        .container {
+            .slider {
+                padding: 10px;
+            }
+        }
+    }
+}

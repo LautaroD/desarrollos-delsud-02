@@ -1,0 +1,77 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    font-family: $neue;
+
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip .tiptext {
+        font-size: 18px;
+        visibility: hidden;
+        width: 200px;
+        font-weight: 500;
+        color: $azul-francia;
+        text-align: center;
+        border-radius: 3px;
+        padding: 6px 0;
+        position: absolute;
+        z-index: 1;
+
+        margin-left: -110px;
+        top: 120%;
+        left: 80%;
+    }
+    .tooltip .tiptext::after {
+        content: "";
+        position: absolute;
+    }
+    .tooltip:hover .tiptext {
+        visibility: visible;
+    }
+
+    .tooltip .tiptext_v2 {
+        font-size: 18px;
+        visibility: hidden;
+        width: 200px;
+        font-weight: 500;
+        color: $beige;
+        text-align: center;
+        border-radius: 3px;
+        padding: 6px 0;
+        position: absolute;
+        z-index: 1;
+
+        margin-left: -110px;
+        top: 120%;
+        left: 80%;
+    }
+    .tooltip .tiptext_v2::after {
+        content: "";
+        position: absolute;
+    }
+    .tooltip:hover .tiptext_v2 {
+        visibility: visible;
+    }
+}
+
+@media (max-width: $lg) {
+    .wrapper {
+        .tooltip .tiptext {
+            color: $beige;
+            background-color: $azul-francia;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        .tooltip .tiptext_v2 {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+}

@@ -1,0 +1,183 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    position: absolute;
+
+    z-index: 9999;
+
+    width: 100%;
+    top: 200%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 10px;
+
+    .container {
+        border-radius: 20px;
+        background-color: $azul-grisaceo;
+
+        width: calc(100% - 50px);
+        min-height: 100vh;
+        padding: 50px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        z-index: 9998;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            &__btn_close {
+                cursor: pointer;
+
+                img {
+                    height: 40px;
+                }
+            }
+        }
+
+        &__sub_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__description {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+
+                    color: $beige;
+                    font-family: $neue;
+                    font-weight: 500;
+                    font-size: 18px;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &__content {
+            margin-top: 20px;
+
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &__instructions {
+                display: flex;
+                gap: 25px;
+
+                font-family: $neue;
+                font-weight: 500;
+                color: $beige;
+
+                margin-top: 25px;
+
+                &__available {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 7px;
+
+                    span {
+                        height: 20px;
+                        width: 20px;
+                        background-color: #b8d368;
+                        border-radius: 50%;
+                    }
+                }
+
+                &__reserved {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 7px;
+
+                    span {
+                        height: 20px;
+                        width: 20px;
+                        background-color: #ece544;
+                        border-radius: 50%;
+                    }
+                }
+
+                &__selled {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 7px;
+
+                    span {
+                        height: 20px;
+                        width: 20px;
+                        background-color: #fc7032;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .container_gallery {
+        position: relative;
+        margin-top: -250px;
+
+        z-index: 9997;
+
+        width: 100vw;
+        height: 120vh;
+        padding-bottom: 100px;
+        background-color: $beige;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: $lg) {
+    .wrapper {
+        .container {
+            width: calc(100% - 20px);
+            padding: 20px;
+        }
+
+        .container_gallery {
+            position: relative;
+            margin-top: -50px;
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    .wrapper {
+        .container_gallery {
+            margin-top: -250px;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        overflow: hidden;
+
+        .container {
+            width: calc(100% - 10px);
+            padding: 30px;
+        }
+    }
+}

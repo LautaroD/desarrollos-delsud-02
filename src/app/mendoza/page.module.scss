@@ -1,0 +1,141 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    position: relative;
+    opacity: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // background-color: $azul-grisaceo;
+    // right: 100%;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .container {
+        position: absolute;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+        width: 100%;
+
+        h3 {
+            font-family: $addigton;
+            font-size: 100px;
+            font-weight: 500;
+            color: $azul-marino;
+        }
+
+        h4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            color: $beige;
+            font-family: $neue;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        &__projects__other_products {
+            // margin-top: 80px;
+
+            position: absolute;
+            left: 50%;
+            top: 80%;
+
+            transform: translate(-50%, -50%);
+
+            display: flex;
+            gap: 120px;
+        }
+    }
+
+    .formulario {
+        margin-top: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+
+        width: 480px;
+
+        &__field {
+            background-color: $beige;
+            width: 90%;
+            border-radius: 20px;
+            border: none;
+            padding: 11px 25px;
+            font-family: $neue;
+            font-weight: 500;
+            font-size: 18px;
+
+            outline: 0;
+        }
+
+        button {
+            border: none;
+            background-color: inherit;
+            padding: 0;
+            margin: 0;
+            height: auto;
+            width: auto;
+
+            cursor: pointer;
+
+            display: flex;
+        }
+
+        .error_message {
+            color: red;
+            font-size: 14px;
+            font-family: $neue;
+            position: absolute;
+            transform: translate(5px, 47px);
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        .container {
+            h3 {
+                font-size: 65px;
+            }
+
+            h4 {
+                font-size: 18px;
+            }
+        }
+
+        .formulario {
+            width: 110%;
+
+            &__field {
+                width: 100%;
+                padding: 11px 20px;
+                font-size: 16px;
+            }
+        }
+    }
+}

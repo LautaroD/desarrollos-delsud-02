@@ -1,0 +1,76 @@
+.options_loteos_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.option_loteo_button {
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #003a70;
+    margin: 3px;
+    cursor: pointer;
+    padding: 8px 17px 8px 17px;
+    color: #003a70;
+    transition: 0.2s;
+    width: 145px;
+    text-align: center;
+}
+
+.option_loteo_button:hover {
+    background-color: #003a70;
+    color: #e8e9ed;
+}
+
+.title_question {
+    font-size: 13px;
+}
+
+.extraOptions {
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+
+    &__returnBtn {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 8px 17px 8px 10px;
+        border: none;
+        width: 70%;
+
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid #003a70;
+        color: #003a70;
+
+        cursor: pointer;
+    }
+
+    &__returnBtn:hover {
+        background-color: #003a70;
+        color: #e8e9ed !important;
+
+        svg {
+            path {
+                stroke: #e8e9ed;
+            }
+        }
+
+        .svg_headset {
+            path {
+                stroke: inherit !important;
+                fill: #e8e9ed;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .title_question {
+        font-size: 12px;
+    }
+}

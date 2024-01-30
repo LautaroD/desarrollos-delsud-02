@@ -1,0 +1,33 @@
+.wrapper {
+    // style={{ display: "flex", justifyContent: "center", height: "250px" }}
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .container_logo {
+        svg {
+            padding: 30px;
+
+            height: 250px;
+            width: 100%;
+        }
+    }
+    .container_logo_sj {
+        svg {
+            padding: 30px;
+
+            height: 250px;
+            width: 115%;
+        }
+    }
+}
+
+.container_mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 50%;
+
+    gap: 20px;
+}

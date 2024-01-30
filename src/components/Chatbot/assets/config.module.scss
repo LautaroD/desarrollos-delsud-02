@@ -1,0 +1,26 @@
+.header {
+    background-color: #14213d;
+    height: 57px;
+    padding: 8px;
+    color: #e8e9ed;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    p {
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    padding: 50px 0px;
+
+    position: absolute;
+    height: 100vh;
+
+    left: 45%;
+    top: -150vh;
+    // transform: translateY(-1000px);
+    // transform: translateY(-150vh);
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    z-index: 4;
+
+    &__container_img {
+        border-radius: 140px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: $lg) {
+    .wrapper {
+        padding: 20px 0px;
+        gap: 15px;
+    }
+}

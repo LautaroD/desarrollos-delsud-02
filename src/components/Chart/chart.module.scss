@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    width: 100%;
+    height: 800px;
+
+    margin-top: 1000px;
+    // margin-top: 400px;
+
+    display: flex;
+    justify-content: center;
+
+    svg {
+        height: 800px !important;
+    }
+}
+
+@media (max-width: $lg) {
+    .wrapper {
+        height: 600px;
+
+        display: flex;
+        justify-content: center;
+
+        svg {
+            height: 600px !important;
+        }
+    }
+}
+
+@media (max-width: $sm) {
+    .wrapper {
+        margin-top: 400px;
+    }
+}

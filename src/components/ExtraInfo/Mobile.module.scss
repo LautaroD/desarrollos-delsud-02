@@ -1,0 +1,74 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    position: absolute;
+
+    z-index: 9999;
+
+    width: 100%;
+    top: 200%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+
+    padding: 0px 10px;
+
+    .container {
+        border-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-color: $azul-grisaceo;
+
+        width: calc(100% - 10px);
+        padding: 30px;
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        z-index: 9998;
+
+        &__btn_close {
+            align-self: flex-end;
+        }
+
+        &__header {
+            scale: 0.8;
+        }
+
+        &__description {
+            text-align: center;
+
+            color: $beige;
+            font-family: $neue;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        &__services {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        &__gallery {
+            width: 100%;
+            min-height: 1000px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            &__item {
+                border-radius: 80px;
+                height: 250px !important;
+                width: 100% !important;
+            }
+        }
+    }
+}

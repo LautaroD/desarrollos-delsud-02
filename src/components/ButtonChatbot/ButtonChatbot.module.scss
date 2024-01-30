@@ -1,0 +1,23 @@
+.container {
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+}
+.home {
+    position: fixed;
+    bottom: 170px;
+    right: 40px;
+
+    img {
+        height: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        display: none;
+    }
+    .home {
+        display: none;
+    }
+}

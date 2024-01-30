@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.wrapper {
+    height: 800px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: $neue;
+    font-size: 25px;
+    color: $beige;
+}
